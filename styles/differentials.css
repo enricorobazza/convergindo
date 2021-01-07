@@ -1,0 +1,128 @@
+#differentials {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f8f9ff;
+}
+
+#differentials .title {
+  font: normal normal 800 32px Open Sans;
+  letter-spacing: 0px;
+  color: #6975fc;
+  text-transform: lowercase;
+}
+
+#differentials .description {
+  font: normal normal normal 16px Open Sans;
+  letter-spacing: 0px;
+  color: #103c78;
+  margin-top: 15px;
+}
+
+#differentialsContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.differential {
+  background-color: #fff;
+  box-shadow: 0px 3px 16px #4650bc33;
+  border-radius: 16px;
+  margin: 20px;
+  padding: 20px;
+  width: 25%;
+  height: 450px;
+}
+
+.differential .image img {
+  width: 100%;
+}
+
+.differential .title {
+  font: normal normal bold 20px Open Sans !important;
+  margin-top: 20px;
+}
+
+.differential .title.pink {
+  color: #ee2b7a !important;
+}
+
+.differential .title.blue {
+  color: #1dbfd9 !important;
+}
+
+.differential .title.yellow {
+  color: #fda902 !important;
+}
+
+.differential .description {
+  font: normal normal normal 14px Open Sans !important;
+  color: #0f1665 !important;
+}
+
+#differentialsNav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #differentialsContainer {
+    display: block;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+
+  #differentialsNav {
+    display: block;
+  }
+
+  .differential {
+    width: 80%;
+    margin: 4%;
+    height: 350px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+  }
+
+  .differential .image img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .differential .image img {
+    width: 70%;
+  }
+
+  #differentials .description {
+    padding: 0 5%;
+  }
+
+  .differential .description {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .differential {
+    width: 65%;
+    height: 450px;
+  }
+
+  #differentialsContainer {
+    padding: 5px;
+  }
+
+  .differential .image img {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .differential {
+    height: 500px;
+  }
+}
