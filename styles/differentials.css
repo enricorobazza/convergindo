@@ -66,12 +66,18 @@
   display: none;
 }
 
+#differentialsNav svg {
+  margin: 4px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
   #differentialsContainer {
     display: block;
     padding-top: 10px;
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
 
   #differentialsNav {
@@ -84,6 +90,7 @@
     display: inline-block;
     white-space: normal;
     vertical-align: top;
+    scroll-snap-align: center;
   }
 
   .differential .image img {
