@@ -40,12 +40,11 @@
   flex: 3;
 }
 
-#howWorksContent {
-  flex: 7;
-}
-
 #howWorksTabs ul {
   list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 #howWorksTabs ul li {
@@ -56,6 +55,9 @@
   background: #4650bc 0% 0% no-repeat padding-box;
   border-radius: 0px 8px 8px 0px;
   margin-bottom: 5px;
+  flex: 1;
+  cursor: pointer;
+  transition: all ease-in 300ms;
 }
 
 #howWorksTabs ul li .left {
@@ -96,7 +98,7 @@
 }
 
 #howWorksTabs ul li.active .content {
-  font: normal normal bold 24px Open Sans;
+  font: normal normal bold 18px Open Sans;
 }
 
 #howWorksTabs ul li.active {
@@ -106,19 +108,45 @@
   margin-bottom: 0px;
 }
 
-#howWorksContent {
+.howWorksContent {
+  display: none;
+  transition: all ease-in 300ms;
+  opacity: 0;
+}
+
+.howWorksContent .howWorksImage {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.howWorksContent .howWorksImage img {
+  width: 85%;
+}
+
+.howWorksContent .howWorksTitle {
+  font: normal normal normal 25px Open Sans;
+  letter-spacing: 0px;
+  color: #f8f9ff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.howWorksContent.active {
+  flex: 7;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 60px 0;
+  opacity: 1;
 }
 
-#howWorksMiniCards {
+.howWorksMiniCards {
   display: flex;
   width: 90%;
 }
 
-#howWorksMiniCards .minicard {
+.howWorksMiniCards .minicard {
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -128,7 +156,7 @@
   /* width: 215px; */
 }
 
-#howWorksMiniCards .minicard .description {
+.howWorksMiniCards .minicard .description {
   font: normal normal normal 20px Open Sans;
   letter-spacing: 0px;
   color: #ffffff;
@@ -137,7 +165,7 @@
   margin-bottom: 10px;
 }
 
-#howWorksMiniCards .minicard .plan {
+.howWorksMiniCards .minicard .plan {
   font: normal normal bold 32px Open Sans;
   letter-spacing: 3.2px;
   color: #ffffff;
@@ -146,7 +174,7 @@
   margin-bottom: 10px;
 }
 
-#howWorksMiniCards .minicard .calltoaction {
+.howWorksMiniCards .minicard .calltoaction {
   background-color: #fff;
   border-radius: 22px;
   padding: 12px 24px;
@@ -157,14 +185,14 @@
   cursor: pointer;
 }
 
-#howWorksMiniCards .minicard.purple {
+.howWorksMiniCards .minicard.purple {
   background: transparent linear-gradient(231deg, #6975fc 0%, #4952b6 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 0px 3px 36px #4650bccc;
   margin-bottom: 40px;
 }
 
-#howWorksMiniCards .minicard.yellow {
+.howWorksMiniCards .minicard.yellow {
   background: transparent linear-gradient(233deg, #c99c34 0%, #ffc43c 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 0px 3px 36px #4650bccc;
@@ -172,7 +200,7 @@
   margin-left: -20px;
 }
 
-#howWorksDescription {
+.howWorksDescription {
   font: normal normal normal 16px Open Sans;
   letter-spacing: 0px;
   color: #f8f9ff;
@@ -182,11 +210,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #howWorksMiniCards .minicard {
+  .howWorksMiniCards .minicard {
     padding: 20px;
   }
 
-  #howWorksMiniCards .minicard.yellow {
+  .howWorksMiniCards .minicard.yellow {
     margin-left: -15px;
   }
 }
@@ -212,11 +240,11 @@
     background-repeat: no-repeat;
   }
 
-  #howWorksMiniCards .minicard {
+  .howWorksMiniCards .minicard {
     padding: 30px;
   }
 
-  #howWorksMiniCards .minicard.yellow {
+  .howWorksMiniCards .minicard.yellow {
     margin-left: -20px;
   }
 
@@ -267,7 +295,7 @@
     flex: 1;
   }
 
-  #howWorksContent {
+  .howWorksContent {
     padding: 50px 0;
   }
 
@@ -293,11 +321,11 @@
 }
 
 @media screen and (max-width: 450px) {
-  #howWorksMiniCards {
+  .howWorksMiniCards {
     flex-direction: column;
     width: 80%;
   }
-  #howWorksMiniCards .minicard.yellow {
+  .howWorksMiniCards .minicard.yellow {
     margin: 0;
   }
 }
