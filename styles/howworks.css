@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url('../images/mancha3.png');
+  background-position: 50%;
+  background-size: cover;
+  padding: 30px;
 }
 
 #howWorksLeft .title {
@@ -204,6 +208,8 @@
 
   #howWorksLeft {
     padding: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #howWorksMiniCards .minicard {
@@ -220,6 +226,10 @@
 
   #howWorksTabs ul li .number {
     padding-right: 20px;
+  }
+
+  #howWorksTabs ul li.active {
+    margin-left: 0;
   }
 }
 
