@@ -33,7 +33,7 @@ const changeBanner = (dir) => {
 
   if(curBanner === 1){
     bannerContentRight.style.opacity = 0;
-    banner.style.backgroundPosition = `100vw, 50%`;
+    banner.style.backgroundPosition = `100vw, 75%`;
 
     setTimeout(()=>{
       title.innerHTML = banners[curBanner].title;
@@ -44,11 +44,11 @@ const changeBanner = (dir) => {
 
   else {
     banner.style.transition = "none";
-    banner.style.backgroundPosition =  `-100vw, 50%`;
+    banner.style.backgroundPosition =  `-100vw, 75%`;
 
     setTimeout(() => {
       banner.style.transition = "background-position ease 400ms";
-      banner.style.backgroundPosition = "50%, 50%";
+      banner.style.backgroundPosition = "50%, 75%";
 
       setTimeout(() => {
         title.innerHTML = banners[curBanner].title;
