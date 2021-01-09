@@ -1,34 +1,15 @@
 #banner {
   width: 100vw;
   height: 100vh;
-  /* background: transparent */
-  /* linear-gradient(56deg, #212553 0%, #a5315e 64%, #bd892f 100%) 0% 0% */
-  /* no-repeat padding-box; */
   overflow-x: hidden;
-  /* opacity: 0.9; */
-  /* filter: none !important; */
   position: relative;
-  background-image: url('../images/banner1.png');
-  background-position: 50%;
+  background-image: url('../images/banner1.png'), url('../images/banner2.png');
+  background-position: 50%, 150%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  transition: background-position ease 400ms;
 }
-
-/* #banner::before {
-  content: '';
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background-image: url('../images/doctor_vr.jpeg');
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(5px);
-  mix-blend-mode: multiply;
-} */
 
 #bannerContainer {
   width: 100vw;
@@ -45,6 +26,28 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+
+.bannerNav {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#bannerNavLeft {
+  left: 30px;
+}
+
+#bannerNavLeft img {
+  transform: rotate(180deg);
+}
+
+#bannerNavRight {
+  right: 30px;
 }
 
 #navbarHamburguer {
@@ -121,6 +124,7 @@
   position: relative;
   padding-left: 150px;
   padding-top: 70px;
+  transition: all ease 100ms;
 }
 
 #bannerContentLeft .title {
@@ -167,6 +171,7 @@
   padding-right: 150px;
   padding-top: 70px;
   padding-left: 25%;
+  transition: opacity ease 100ms;
 }
 
 .social-proof {
@@ -236,6 +241,12 @@
   $xxxl: 1500px; 
 */
 
+@media only screen and (max-width: 800px) and (max-height: 440px) {
+  #bannerContentRight {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   #bannerContentLeft {
     padding-left: 80px;
@@ -282,6 +293,18 @@
     display: none;
   }
 
+  #bannerNavRight {
+    right: 0;
+    border-radius: 12px 0 0 12px;
+    padding-right: 5px;
+  }
+
+  #bannerNavLeft {
+    left: 0;
+    border-radius: 0 12px 12px 0;
+    padding-left: 5px;
+  }
+
   #navbarHamburguer {
     display: block;
   }
@@ -291,7 +314,7 @@
     justify-content: space-around;
   }
   #bannerContentLeft {
-    width: 90vw;
+    width: 85vw;
     padding: 0;
     padding-top: 100px;
   }
@@ -316,6 +339,12 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  #bannerContentLeft {
+    width: 80vw;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   #bannerContentLeft {
     padding-top: 50px;
@@ -327,6 +356,12 @@
   }
 }
 
+@media only screen and (max-width: 350px) {
+  #bannerContentRight {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-height: 600px) {
   #bannerContentLeft .title,
   #bannerContentLeft .bold-title {
@@ -335,5 +370,14 @@
 
   #bannerContentLeft {
     margin-top: 70px;
+  }
+
+  .social-proof .content img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social-proof.middle {
+    margin-top: 0;
   }
 }

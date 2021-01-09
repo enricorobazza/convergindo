@@ -278,6 +278,12 @@
     display: inline-flex;
     width: 100vw;
     flex-direction: row;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #howWorksTabs ul::-webkit-scrollbar {
+    display: none;
   }
 
   #howWorksTabs ul li.active {

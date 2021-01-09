@@ -78,6 +78,12 @@
     white-space: nowrap;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #differentialsContainer::-webkit-scrollbar {
+    display: none;
   }
 
   #differentialsNav {
