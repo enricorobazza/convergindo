@@ -39,6 +39,8 @@ const changeBanner = (dir) => {
       title.innerHTML = banners[curBanner].title;
       boldTitle.innerHTML = banners[curBanner].boldTitle;
       bannerContentLeft.style.opacity = 1;
+      bannerContentRight.style.display = 'none';
+
     }, 400)
   }
 
@@ -53,6 +55,7 @@ const changeBanner = (dir) => {
       setTimeout(() => {
         title.innerHTML = banners[curBanner].title;
         boldTitle.innerHTML = banners[curBanner].boldTitle;
+        bannerContentRight.style.display = 'block';
         bannerContentRight.style.opacity = 1;
         bannerContentLeft.style.opacity = 1;
       }, 400)
