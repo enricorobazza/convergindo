@@ -47,7 +47,6 @@ const changeBanner = (dir) => {
   }
 
   else {
-    console.log(banner.offsetWidth);
     banner.style.transition = "none";
     banner.style.backgroundPosition =  `-${banner.offsetHeight*1.77}px, 75%`;
 
