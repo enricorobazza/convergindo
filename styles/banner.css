@@ -56,6 +56,7 @@
   background-color: #4650bc;
   border-radius: 16px 0 0 16px;
   cursor: pointer;
+  box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.3);
 }
 
 #navbarLeft,
@@ -368,6 +369,10 @@
 
   #navbarHamburguer {
     display: block;
+    position: fixed;
+    right: 0;
+    top: 20px;
+    z-index: 25;
   }
 
   #bannerContent {
