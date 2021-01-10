@@ -52,11 +52,15 @@
 
 #navbarHamburguer {
   display: none;
-  padding: 20px 25px;
+  padding: 10px 15px;
   background-color: #4650bc;
   border-radius: 16px 0 0 16px;
   cursor: pointer;
   box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.3);
+}
+
+#navbarHamburguer img {
+  width: 15px;
 }
 
 #navbarLeft,
