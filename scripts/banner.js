@@ -1,3 +1,5 @@
+const carouselSpeed = 700;
+
 const bannerNavLeft = document.getElementById("bannerNavLeft");
 const bannerNavRight = document.getElementById("bannerNavRight");
 const banner = document.getElementById("banner");
@@ -41,15 +43,16 @@ const changeBanner = (dir) => {
       bannerContentLeft.style.opacity = 1;
       bannerContentRight.style.display = 'none';
 
-    }, 400)
+    }, carouselSpeed)
   }
 
   else {
+    console.log(banner.offsetWidth);
     banner.style.transition = "none";
-    banner.style.backgroundPosition =  `-100vw, 75%`;
+    banner.style.backgroundPosition =  `-${banner.offsetHeight*1.77}px, 75%`;
 
     setTimeout(() => {
-      banner.style.transition = "background-position ease 400ms";
+      banner.style.transition = `background-position ease ${carouselSpeed}ms`;
       banner.style.backgroundPosition = "50%, 75%";
 
       setTimeout(() => {
@@ -58,7 +61,7 @@ const changeBanner = (dir) => {
         bannerContentRight.style.display = 'block';
         bannerContentRight.style.opacity = 1;
         bannerContentLeft.style.opacity = 1;
-      }, 400)
+      }, carouselSpeed)
     }, 50)
   }
 

@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  transition: background-position ease 400ms;
+  transition: background-position ease 700ms;
 }
 
 #bannerContainer {
