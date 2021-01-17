@@ -1,0 +1,180 @@
+#testimony {
+  background-color: #f8f9ff;
+  padding: 80px;
+  background-image: url('../images/mancha1.svg'), url('../images/mancha2.svg');
+  background-position: -5% 105px, 90% 185px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#testimony .title {
+  font: normal normal bold 32px Open Sans;
+  letter-spacing: 0px;
+  color: #6975fc;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+#testimony .description {
+  text-align: center;
+  font: normal normal normal 16px Open Sans;
+  letter-spacing: 0px;
+  color: #0f1665;
+  margin-top: 20px;
+}
+
+#testimonysContainer {
+  display: block;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 0 15%; */
+  margin: 60px auto;
+  width: 60vw;
+  position: relative;
+  /* background-color: #f09; */
+  padding: 0 40px;
+}
+
+#testimonysHolder {
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#testimonysHolder::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonyNav {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 1;
+  transition: all ease 200ms;
+}
+
+#testimonyNavLeft {
+  left: 0;
+  transform: rotate(180deg);
+  display: none;
+}
+
+#testimonyNavRight {
+  right: 0;
+}
+
+.testimony {
+  display: inline-block;
+  color: white;
+  border-radius: 16px;
+  width: 49%;
+  background-color: #38409c;
+  transition: all ease 300ms;
+  transform: scale(0.85);
+  vertical-align: middle;
+  position: relative;
+}
+
+.testimony.t1,
+.testimony.t3 {
+  background-image: url('../images/mancha4.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.testimony.t2,
+.testimony.t4 {
+  background-image: url('../images/mancha5.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.testimonyHolder {
+  margin: 30px 40px;
+  text-align: left;
+}
+
+.testimony.hidden {
+  opacity: 0;
+  scroll-snap-align: none;
+}
+
+.testimony.active {
+  background-color: #6975fc;
+  transform: scale(1);
+}
+
+.testimony .image img {
+  width: 67px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 26px #0000005c;
+}
+
+.testimony .text {
+  white-space: normal;
+  font: 16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.testimony .name {
+  white-space: normal;
+  margin-top: 20px;
+  font: bold 14px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.testimony .school {
+  white-space: normal;
+  font: 13px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.testimony .quotes {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 40px;
+  top: 45px;
+  fill: white;
+  transform: rotate(180deg) scaleX(-1);
+}
+
+#testimonysNav svg {
+  margin: 5px;
+}
+
+@media screen and (max-width: 936px) {
+  .testimony {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #testimony {
+    padding: 80px 0;
+  }
+
+  #testimony .description {
+    padding: 0 5%;
+  }
+
+  #testimonysContainer {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #testimonysContainer {
+    width: 70vw;
+  }
+}
