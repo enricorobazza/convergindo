@@ -276,7 +276,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     display: inline-flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: row;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
