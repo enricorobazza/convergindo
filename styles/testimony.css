@@ -1,13 +1,12 @@
-#testimony {
+#testimony_functionalities {
   background-color: #f8f9ff;
-  padding: 80px;
   background-image: url('../images/mancha1.svg'), url('../images/mancha2.svg');
   background-position: -5% 105px, 90% 185px;
   background-repeat: no-repeat;
   text-align: center;
 }
 
-#testimony .title {
+#testimony_functionalities .title {
   font: normal normal bold 32px Open Sans;
   letter-spacing: 0px;
   color: #6975fc;
@@ -15,12 +14,16 @@
   text-align: center;
 }
 
-#testimony .description {
+#testimony_functionalities .description {
   text-align: center;
   font: normal normal normal 16px Open Sans;
   letter-spacing: 0px;
   color: #0f1665;
   margin-top: 20px;
+}
+
+#testimony {
+  padding: 80px;
 }
 
 #testimonysContainer {
