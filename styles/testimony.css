@@ -173,6 +173,20 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  #testimonyNavLeft {
+    left: 7px;
+  }
+
+  #testimonyNavRight {
+    right: 8px;
+  }
+
+  .testimony {
+    width: 96%;
+  }
+}
+
 @media screen and (max-width: 325px) {
   #testimonysContainer {
     width: 70vw;
