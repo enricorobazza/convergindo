@@ -1,0 +1,201 @@
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#footerLeft {
+  padding: 100px;
+  flex: 2;
+  background-image: url('../images/aviao_rodape.svg'),
+    linear-gradient(236deg, #6975fc 0%, #353b7e 100%);
+  background-repeat: no-repeat;
+  background-position: right 10% bottom, top left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#footerLeft .title {
+  font: normal normal bold 30px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+#footerLeft .description {
+  font: normal normal normal 14px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+#footerRight {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  background: #343eaa 0% 0% no-repeat padding-box;
+  flex: 1;
+}
+
+#footerLinks {
+  background: #4650bc 0% 0% no-repeat padding-box;
+  flex: 1;
+}
+
+#footerLeft input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#footerLeft input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6975fc;
+  opacity: 1; /* Firefox */
+}
+
+#footerLeft input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6975fc;
+}
+
+#footerLeft input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6975fc;
+}
+
+#footerLeft input:focus,
+#btnKnowMore:focus {
+  outline: none;
+}
+
+#btnKnowMore {
+  background-color: #5dff9e;
+  padding: 12px 24px;
+  font: normal normal bold 16px Open Sans;
+  letter-spacing: 0px;
+  color: #6975fc;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#contact {
+  padding: 120px;
+}
+
+#contact .top {
+  font: normal normal bold 16px Open Sans;
+  color: white;
+  text-transform: uppercase;
+}
+
+#contact .bottom {
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .bottom .contact {
+  margin-right: 30px;
+}
+
+#contact .bottom .text {
+  margin-top: 10px;
+  font: normal normal normal 16px Open Sans;
+  color: white;
+}
+
+#footerLinks {
+  padding: 46px 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+#footerLinks ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: normal normal bold 14px Open Sans;
+  color: white;
+}
+
+#footerLinks ul li {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #footerLeft {
+    padding: 50px;
+  }
+
+  #contact {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #contact .bottom {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #contact .bottom .contact {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  #contact .bottom {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  #contact {
+    margin-top: -5px;
+  }
+
+  #footerLinks {
+    margin-top: -5px;
+  }
+
+  #contact .bottom {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact .bottom .contact {
+    text-align: center;
+  }
+
+  #contact .bottom {
+    flex-direction: column;
+  }
+
+  #footerLinks ul {
+    flex-direction: column;
+  }
+}
