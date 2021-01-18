@@ -1,0 +1,188 @@
+#signup {
+  background-image: url('../images/banner3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#signup .title {
+  font: normal normal bold 32px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#signup .description {
+  text-align: center;
+  font: normal normal normal 16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 22px auto;
+  width: 40%;
+}
+
+#plansContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.plan {
+  flex: 1;
+  align-self: stretch;
+  background-color: #fff;
+  border-radius: 18px;
+  width: 44%;
+  margin: 3%;
+}
+
+.plan .title {
+  padding: 22px;
+  text-align: center;
+  border-radius: 18px 18px 0 0;
+  font: normal normal bold 24px Open Sans !important;
+  text-transform: uppercase;
+}
+
+.plan .title.purple {
+  background-color: #6975fc;
+}
+
+.plan .title.yellow {
+  background: transparent linear-gradient(257deg, #c99c34 0%, #ffc43c 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.plan .benefits {
+  padding: 10px 20px 0px 20px;
+}
+
+.plan .benefit {
+  display: flex;
+  margin: 20px 0;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.plan .benefit .check {
+  margin-right: 15px;
+}
+
+.plan .benefit .text {
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.plan .price {
+  font: normal normal bold 32px Open Sans;
+  letter-spacing: 0px;
+  color: #103c78;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.plan .btnSignup {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 22px;
+  padding: 12px 24px;
+  text-align: center;
+  font: normal normal bold 16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: -10px 30px 30px 30px;
+}
+
+.plan .btnSignup.purple {
+  background-color: #4650bc;
+}
+
+.plan .btnSignup.yellow {
+  background: transparent linear-gradient(257deg, #c99c34 0%, #ffc43c 100%) 0%
+    0% no-repeat padding-box;
+}
+
+#plansNav {
+  display: none;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#plansNav svg {
+  margin: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+  #plansContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #plansContainer {
+    width: 95%;
+  }
+
+  #signup .description {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #plansContainer {
+    width: 95%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #plansNav {
+    display: block;
+  }
+
+  #plansContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .plan {
+    width: 70%;
+    margin: 0 15%;
+    display: inline-block;
+    white-space: normal;
+    scroll-snap-align: center;
+  }
+
+  #signup .description {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .plan {
+    width: 90%;
+  }
+
+  #signup .description {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .plan {
+    width: 95%;
+  }
+
+  #signup .description {
+    width: 80%;
+  }
+
+  .plan .benefit .text {
+    font-size: 13px;
+  }
+}

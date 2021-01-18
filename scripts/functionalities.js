@@ -52,8 +52,4 @@ functionalitiesContainer.addEventListener("scroll", (e) => {
 
 });
 
-functionalitiesNav.innerHTML = "";
-functionalitiesNav.appendChild(functionalitiesNavActive);
-functionalitiesNav.appendChild(functionalitiesNavNotActive1);
-functionalitiesNav.appendChild(functionalitiesNavNotActive2);
-functionalitiesNav.appendChild(functionalitiesNavNotActive3);
+setFunctionality(0);
