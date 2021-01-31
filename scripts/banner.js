@@ -1,4 +1,5 @@
 const carouselSpeed = 700;
+const carouselInverval = 1000000;
 
 const bannerNavLeft = document.getElementById("bannerNavLeft");
 const bannerNavRight = document.getElementById("bannerNavRight");
@@ -68,7 +69,7 @@ const changeBanner = (dir) => {
 
   bannerInterval = setInterval(()=>{
     changeBanner(1);
-  }, 10000)
+  }, carouselInverval)
 
 }
 
@@ -82,4 +83,41 @@ bannerNavRight.addEventListener('click', () => {
 
 bannerInterval = setInterval(()=>{
   changeBanner(1);
-}, 10000)
+}, carouselInverval)
+
+const differentialsLink = document.getElementsByClassName("differentialsLink")[0]
+const howWorksLink = document.getElementsByClassName("howWorksLink")[0]
+const testimonialsLink = document.getElementsByClassName("testimonialsLink")[0]
+const signupLink = document.getElementsByClassName("signupLink")[0]
+const differentials = document.getElementById("differentials");
+const howWorks = document.getElementById("howWorks");
+const testimomials = document.getElementById("testimony_functionalities");
+const signup = document.getElementById("signup");
+
+differentialsLink.addEventListener('click', () => {
+  window.scrollTo({
+    top: differentials.offsetTop,
+    behavior: 'smooth'
+  })
+})
+
+howWorksLink.addEventListener('click', () => {
+  window.scrollTo({
+    top: howWorks.offsetTop,
+    behavior: 'smooth'
+  })
+})
+
+testimonialsLink.addEventListener('click', () => {
+  window.scrollTo({
+    top: testimomials.offsetTop,
+    behavior: 'smooth'
+  })
+})
+
+signupLink.addEventListener('click', () => {
+  window.scrollTo({
+    top: signup.offsetTop,
+    behavior: 'smooth'
+  })
+})

@@ -34,6 +34,7 @@
   padding: 50px 20px;
   width: 25%;
   height: auto;
+  align-self: stretch;
 }
 
 .differential .image img {
