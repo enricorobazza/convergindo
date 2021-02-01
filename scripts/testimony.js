@@ -6,7 +6,7 @@ testimonysHolder = document.getElementById("testimonysHolder");
 const testimonyNavActive = document.querySelector("#testimonysNav svg.active").cloneNode(true);
 const testimonyNavNotActive1 = document.querySelector("#testimonysNav svg:not(.active)").cloneNode(true);
 const testimonyNavNotActive2 = document.querySelector("#testimonysNav svg:not(.active)").cloneNode(true);
-const testimonyNavNotActive3 = document.querySelector("#testimonysNav svg:not(.active)").cloneNode(true);
+// const testimonyNavNotActive3 = document.querySelector("#testimonysNav svg:not(.active)").cloneNode(true);
 const testimonysNav = document.getElementById("testimonysNav");
 
 let curTestimony = 0;
@@ -60,7 +60,7 @@ const setTestimony = (dir) => {
   if(curTestimony > 2){
     testimonysNav.appendChild(testimonyNavNotActive1);
     testimonysNav.appendChild(testimonyNavNotActive2);
-    testimonysNav.appendChild(testimonyNavNotActive3);
+    // testimonysNav.appendChild(testimonyNavNotActive3);
     testimonysNav.appendChild(testimonyNavActive);
   }
 
@@ -68,21 +68,21 @@ const setTestimony = (dir) => {
     testimonysNav.appendChild(testimonyNavNotActive1);
     testimonysNav.appendChild(testimonyNavNotActive2);
     testimonysNav.appendChild(testimonyNavActive);
-    testimonysNav.appendChild(testimonyNavNotActive3);
+    // testimonysNav.appendChild(testimonyNavNotActive3);
   }
 
   else if(curTestimony > 0){
     testimonysNav.appendChild(testimonyNavNotActive1);
     testimonysNav.appendChild(testimonyNavActive);
     testimonysNav.appendChild(testimonyNavNotActive2);
-    testimonysNav.appendChild(testimonyNavNotActive3);
+    // testimonysNav.appendChild(testimonyNavNotActive3);
   }
 
   else{
     testimonysNav.appendChild(testimonyNavActive);
     testimonysNav.appendChild(testimonyNavNotActive1);
     testimonysNav.appendChild(testimonyNavNotActive2);
-    testimonysNav.appendChild(testimonyNavNotActive3);
+    // testimonysNav.appendChild(testimonyNavNotActive3);
   }
 
   // testimony[0].style.marginLeft = - testimony[curTestimony].offsetLeft;
@@ -102,7 +102,7 @@ testimonysNav.innerHTML = "";
 testimonysNav.appendChild(testimonyNavActive);
 testimonysNav.appendChild(testimonyNavNotActive1);
 testimonysNav.appendChild(testimonyNavNotActive2);
-testimonysNav.appendChild(testimonyNavNotActive3);
+// testimonysNav.appendChild(testimonyNavNotActive3);
 
 window.addEventListener('resize', () => {
   let scrollTo = testimony[curTestimony].offsetLeft - 50;
