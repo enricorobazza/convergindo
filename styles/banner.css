@@ -208,7 +208,7 @@
 .social-proof {
   background-color: #fff;
   border-radius: 57px;
-  margin: 20px;
+  margin: 5px;
   display: inline-box;
   width: 345px;
   padding: 0 25px 0 0;
@@ -241,10 +241,11 @@
 }
 
 .social-proof .text {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0px;
   color: #0f1665;
   margin-bottom: 7px;
+  line-height: 110%;
 }
 
 .social-proof .title,
@@ -252,6 +253,7 @@
   font-size: 14px;
   letter-spacing: 0px;
   color: #4650bc;
+  line-height: 115%;
 }
 
 .social-proof .quotes {
