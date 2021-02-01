@@ -8,6 +8,35 @@ const howWorksContent2 = document.getElementById("howWorksContent2");
 const howWorksContent3 = document.getElementById("howWorksContent3");
 const howWorksContent4 = document.getElementById("howWorksContent4");
 
+const plusPlanLink = document.getElementById("plusPlanLink");
+const premiumPlanLink = document.getElementById("premiumPlanLink");
+
+
+const plusPlan = document.getElementById("plusPlan");
+const premiumPlan = document.getElementById("premiumPlan");
+
+plusPlanLink.addEventListener('click', () => {
+  plansContainer.scrollTo({
+    left: plusPlan.offsetLeft
+  })
+  window.scrollTo({
+    top: plansContainer.offsetTop,
+    behavior: 'smooth'
+  })
+})
+
+premiumPlanLink.addEventListener('click', () => {
+  plansContainer.scrollTo({
+    left: premiumPlan.offsetLeft
+  })
+
+  window.scrollTo({
+    top: plansContainer.offsetTop,
+    behavior: 'smooth'
+  })
+})
+
+
 const clearHowWorksActive = () => {
   howWorksTab1.classList.remove("active");
   howWorksTab2.classList.remove("active");
