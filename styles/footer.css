@@ -155,6 +155,12 @@
   }
 }
 
+@media screen and (max-width: 950px){
+  #footerLeft {
+    flex: auto;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #footer {
     flex-direction: column;
@@ -185,6 +191,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #footerRight{
+    display: block;
   }
 
   #contact .bottom .contact {

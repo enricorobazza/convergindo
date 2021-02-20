@@ -227,6 +227,26 @@
   #howWorksTabs ul li .number {
     padding-right: 10px;
   }
+
+  .howWorksMiniCards{
+    display: block;
+  }
+
+  #howWorksLeft {
+    flex: auto;
+  }
+
+  #howWorksRight {
+    flex: auto;
+  }
+
+  #howWorksTabs ul {
+    height: 100%;
+  }
+
+  .howWorksMiniCards .minicard.yellow {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -244,9 +264,9 @@
     padding: 30px;
   }
 
-  .howWorksMiniCards .minicard.yellow {
+  /* .howWorksMiniCards .minicard.yellow {
     margin-left: -20px;
-  }
+  } */
 
   #howWorksTabs ul li {
     padding: 15% 0 15% 15%;
@@ -277,6 +297,7 @@
     white-space: nowrap;
     display: inline-flex;
     width: 100%;
+    height: auto;
     flex-direction: row;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -303,6 +324,7 @@
 
   .howWorksContent {
     padding: 50px 0;
+    flex: auto !important;
   }
 
   #howWorksTabs ul li.active {
@@ -316,6 +338,7 @@
     align-items: center;
     justify-content: center;
   }
+
   #howWorksTabs ul li .arrow {
     text-align: center;
     margin-top: 20px;
@@ -324,14 +347,12 @@
   #howWorksTabs ul li .arrow img {
     transform: rotate(90deg);
   }
+
 }
 
 @media screen and (max-width: 450px) {
   .howWorksMiniCards {
     flex-direction: column;
     width: 80%;
-  }
-  .howWorksMiniCards .minicard.yellow {
-    margin: 0;
   }
 }
