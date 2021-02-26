@@ -8,13 +8,17 @@ const bannerContainer = document.getElementById("bannerContainer")
 
 const btnClose = document.querySelector("#navbarRight .top .times");
 
+const navbar = document.getElementById("navbar");
+
 const openMenu = () => {
   navbarRight.style.display = 'flex';
   navbarRight.style.transition = 'none';
   navbarRight.style.right = "-100vw";
   blackoverlay.style.opacity = 0;
   blackoverlay.style.display = 'block';
-  bannerContainer.style.zIndex = 40;
+  if(bannerContainer) bannerContainer.style.zIndex = 40; // index.html
+  else navbar.classList.remove('purple'); // login.html
+  
   navbarRight.style.transition = 'right ease 400ms';
   setTimeout(()=>{
     navbarRight.style.right = "0vw";
@@ -30,7 +34,8 @@ const closeMenu = () => {
     blackoverlay.style.display = 'none';
   }, 400)
   
-  bannerContainer.style.zIndex = 2;
+  if(bannerContainer) bannerContainer.style.zIndex = 2; // index.html
+  else navbar.classList.add('purple');    // login.html
 }
 
 navbarHamburguer.addEventListener('click', () => {

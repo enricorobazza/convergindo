@@ -149,3 +149,7 @@ body {
   color: #0f1665;
   margin-top: 20px;
 }
+
+#loginContainer{
+  display: none;
+}
