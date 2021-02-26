@@ -1,7 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 
 #navbarContainer {
@@ -11,6 +12,9 @@ body {
 
 #top {
   background-color: #f8f9ff;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 #middle {
@@ -56,8 +60,10 @@ body {
   border-radius: 16px;
   width: 350px;
   /* height: 320px; */
-  margin-top: -3%;
   padding: 40px 20px;
+  margin: 20px;
+  /* margin-top: -3%; */
+
 }
 
 #loginCard .title {
@@ -154,8 +160,18 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
-  #navbarHamburguer {
-      right: 80px !important;
+@media only screen and (max-width: 600px) {
+  #loginCard{
+    margin: 20px;
   }
+
+  #bottom {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  #bottom .contact {
+    margin: 20px;
+  }
+
 }
