@@ -153,3 +153,9 @@ body {
 #loginContainer{
   display: none;
 }
+
+@media only screen and (max-width: 800px) {
+  #navbarHamburguer {
+      right: 80px !important;
+  }
+}
