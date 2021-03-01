@@ -81,6 +81,21 @@ body {
   margin-top: 7px;
 }
 
+.error{
+  color:#c03c4e;
+  font-size: 14px;
+}
+
+.success{
+  margin-bottom: 15px;
+  color:#4f9230;
+  font-size: 14px;
+}
+
+.hide{
+  display: none;
+}
+
 #loginCard input {
   padding: 10px 20px;
   border-radius: 20px;
@@ -107,11 +122,11 @@ body {
 }
 
 #loginCard input:focus,
-#btnSignin:focus {
+.btnSubmit:focus {
   outline: none;
 }
 
-#btnSignin {
+.btnSubmit {
   background-color: #4650bc;
   padding: 12px 30px;
   font: normal normal bold 16px Open Sans;

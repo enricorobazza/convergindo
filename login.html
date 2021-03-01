@@ -49,6 +49,7 @@
       <div class="description">Faça login para continuar</div>
 
       <form id="formSignin" action="#">
+        <span id="errorMessage" class="error hide">Usuário ou senha incorretos.</span>
         <input type="email" placeholder="email" />
 
         <input type="password" placeholder="senha" />
@@ -58,7 +59,7 @@
         <a class="link" href="#">Esqueceu a senha?</a>
       </div>
 
-        <button id="btnSignin" type="submit">Entrar</button>
+        <button id="btnSignin" class="btnSubmit" type="submit">Entrar</button>
 
         <div id="registerContainer">
           Ainda não tem cadastro? <a href="#" class="link noUnderline font-14">Cadastre-se agora</a>
@@ -84,5 +85,17 @@
 </body>
 
 <script type="text/javascript" src="scripts/navbar.js"></script>
+<script>
+  const btnSignin = document.getElementById("btnSignin");
+  const errorMessage = document.getElementById("errorMessage");
+
+  btnSignin.addEventListener('click', (e) => {
+    e.preventDefault();
+    errorMessage.classList.add("hide");
+    errorMessage.classList.remove("hide");
+  })
+
+
+</script>
 
 </html>
