@@ -33,7 +33,6 @@ body {
 
 #bottom {
   background-color: #4650bc;
-  padding: 33px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 5%;
 }
 
 #bottom .contact .text {
